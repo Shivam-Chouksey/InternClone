@@ -1,0 +1,101 @@
+.Card {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.Card a {
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+
+.Card a:hover {
+    color: black;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 100%;
+
+}
+
+.LowerDiv {
+    background-color: white;
+    position: relative;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.mainDiv img {
+    width: 100%;
+    height: 30%;
+    border-radius: 20 20 20 20;
+}
+
+.Div1 {
+
+    padding-block: 1em;
+    padding-left: 1EM;
+    text-align: start;
+
+}
+
+.Div1 span {
+    background: linear-gradient(to left, rgba(255, 255, 255, 150), rgb(205, 178, 44));
+
+}
+
+.Div1 h5 {
+    font-weight: 650;
+}
+
+.Div2 {
+    height: 70%;
+    /* flex: 1 1 auto; */
+    display: flex;
+    /* background-color: #00A5EC; */
+}
+
+.Div2 ul {
+    display: flex;
+    padding-left: 1em;
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    justify-content: center;
+    gap: .5em;
+    /* flex: 1 1 auto; */
+}
+
+.Div2 ul li {
+    list-style: none;
+}
+
+.Div2 ul li:last-child {
+    text-align: start;
+}
+
+.Div3 span {
+    height: 3em;
+    width: 50%;
+    margin-left: 1em;
+    background-color: #00A5EC;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: .7em;
+}
+
+.Div3 {
+    display: flex;
+    /* background-color: #f3f8ff; */
+    height: 4em;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+
+}

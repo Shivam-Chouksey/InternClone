@@ -1,0 +1,50 @@
+.companies {
+    padding-top: 3em;
+    background-color: white;
+    height: 20em;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+.companies>h3 {
+    margin-bottom: 2em;
+}
+
+.comp_crsl {
+    width: 80vw;
+    display: flex;
+    /* background-color: blue; */
+    /* background-color:lin; */
+    margin: auto;
+    height: 7em;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    position: relative;
+    white-space: nowrap;
+}
+
+.comp_crsl>img {
+    animation: scro infinite 70s;
+    scroll-behavior: linear;
+
+}
+
+@keyframes scro {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.comp_crsl::before {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+
+
+}
+
+.comp_crsl::after {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), white);
+}
