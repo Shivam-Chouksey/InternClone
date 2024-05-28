@@ -220,7 +220,7 @@ ul {
     }
 }
 
-@media (max-width:331px) {
+@media (max-width:576px) {
     .header {
         width: 100%;
         justify-content: start;

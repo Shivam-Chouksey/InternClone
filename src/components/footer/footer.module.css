@@ -212,49 +212,44 @@ h5 {
     }
 }
 
-@media (max-width:331px) {
+@media (max-width:576px) {
     footer {
-
-        height: 75em;
+        height: 73em;
     }
-
     .footer {
         height: 60em;
-
-
     }
 
     .upperDiv {
-
-        height: 30em;
+      /* background-color: aqua; */
+        height:28em;
     }
 
     .upDivs {
         display: none;
-
     }
 
     .upDivs:last-child {
-        display: block;
+        display:flex;
+        /* background-color: brown; */
+        height: 28em;
+        /* gap: 2em; */
+    }
+    .upDivs h5{
+        font-size: 1.5em;
     }
 
     .lowerDiv {
         height: 40em;
-
-
     }
 
     .lower1stDiv {
         height: 30em;
-
-
     }
 
     .lower1stDiv ul {
         display: flex;
-
         height: 100%;
-
     }
 
     .lower2ndDiv {

@@ -1,9 +1,10 @@
 .companies {
     padding-top: 3em;
     background-color: white;
-    height: 20em;
+    height: 17em;
     white-space: nowrap;
     border-radius: 0;
+    color: #333;
 }
 
 .companies>h3 {
@@ -11,7 +12,7 @@
 }
 
 .comp_crsl {
-    width: 80vw;
+    /* width: 80vw; */
     display: flex;
     /* background-color: blue; */
     /* background-color:lin; */
@@ -33,18 +34,26 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-100%);
     }
 }
 
 .comp_crsl::before {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-
-
+    background: linear-gradient(to right, rgba(255, 255,255, 0), white);
 }
 
 .comp_crsl::after {
-    background: linear-gradient(to right, rgba(255, 0, 0, 0), white);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
+
+@media (max-width:576px) {
+    .companies{
+        height: 15em;
+    }
+    .comp_crsl{
+        width: 100%;
+    }
+    
+}
+

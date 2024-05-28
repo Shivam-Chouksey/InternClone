@@ -2,7 +2,7 @@
     position: relative;
     height: 85em;
     /* background-image: url('src/assets/PlaceCourse/images1.jpeg'); */
-
+  border-radius: 0;
 }
 
 .content {
@@ -40,7 +40,6 @@
 .Div4 {
     height: 90%;
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -53,22 +52,23 @@
 
     .Div4 {
         display: flex;
+        margin-bottom: 5em;
     }
 }
 
-@media (max-width:331px) {
+@media (max-width:576px) {
     .GauranteeDiv {
         height: 230em;
     }
-
     .content {
         height: 225em;
     }
 
     .Div4 {
         display: flex;
-        height: 28em;
+        height: 40em;
         flex-wrap: wrap;
+        /* overflow-y: scroll; */
     }
 
 }

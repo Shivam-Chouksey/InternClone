@@ -6,17 +6,9 @@ export default function Company() {
         <div className={classes.companies}>
             <h3>Top companies trust us</h3>
             <div className={classes.comp_crsl}>
-
                 <img src={topcomp} alt="" />
-
-
                 <img src={topcomp} alt="" />
-
-
             </div>
-
-
-
         </div>
     )
 }

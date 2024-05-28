@@ -1,5 +1,7 @@
 .courses {
     background-color: #eef6ff;
+    /* background-color:blue; */
+   border-radius: 0%;
     position: relative;
     height: 35em;
     padding-top: 4em;
@@ -8,7 +10,8 @@
 
 .courseCarasoul {
     border-radius: 20px;
-    width: 80vw;
+    background-color: aliceblue;
+    width: 81vw;
     margin: auto;
     height: 20em;
     display: flex;
@@ -30,6 +33,10 @@
 
 .courses_crsl>a {
     color: grey;
+}
+.courses>h2{
+    width: 100%;
+    font-size:2em;
 }
 
 .courses>h5 {
@@ -60,6 +67,14 @@
     align-items: start;
     margin-left: 1em;
 }
+.extra_info>h3{
+    /* background-color: aqua; */
+    color: black;
+    margin-block: .5em;
+}
+.extra_info>a{
+    color: #333;
+}
 .advCrsl_btn{
     /* background-color: brown; */
     width:10%;
@@ -72,4 +87,10 @@
 .advCrsl_btn>button{
     background-color:silver;
     color: black;
+}
+
+@media (max-width:576px) {
+    .courseCarasoul{
+        width: 95vw;
+    }
 }

@@ -25,27 +25,27 @@ const internships = [{
 
 const jobs = [{
     id: 1, status: 'actively hiring', Role: 'Sales Executive',
-    company: 'PolicyBazaar.com', location: 'Gurgaon', pay: '2,50,000-4,00,000/year'
+    company: 'PolicyBazaar.com', location: 'Gurgaon', pay: '2,50,000-4,00,000/year',duration:'Permanent'
 },
 {
     id: 2, status: 'actively hiring', Role: 'Business Development Executive',
     company: 'Physics Wallah', location: 'kozhikode',
-    pay: '2,00,000-2,50,000/year'
+    pay: '2,00,000-2,50,000/year',duration:'Permanent'
 },
 {
     id: 3, status: 'actively hiring', Role: 'Junior Business Development Trainee',
     company: 'Plant Spark', location: 'Gurgaon',
-    pay: '4,00,000-7,20,000/year'
+    pay: '4,00,000-7,20,000/year',duration:'Permanent'
 },
 {
     id: 4, status: 'actively hiring', Role: 'English Teacher',
     company: 'Plant Spark', location: 'Work from Home',
-    pay: '3,00,000-5,00,000/year'
+    pay: '3,00,000-5,00,000/year',duration:'Permanent'
 },
 {
     id: 5, status: 'actively hiring', Role: 'Business Development Associate',
     company: 'Plant Spark', location: 'Gurgaon',
-    pay: '3,00,000-8,00,000/year'
+    pay: '3,00,000-8,00,000/year',duration:'Permanent'
 }]
 
 const course = [{
@@ -65,7 +65,7 @@ const course = [{
     duration: '8 weeks', title: 'Python', rating: '4.6', applicant: "76,313",
 },
 {
-    id: 5, img: 'machine_learning.webp',
+    id: 5, img: 'courses/machine_learning.webp',
     duration: '5 weeks', title: 'Machine_learning', rating: '4.7', applicant: "56,313",
 },
 {

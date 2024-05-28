@@ -4,7 +4,7 @@ import Courses from '../main/courses/courses';
 import Company from '../main/hiredCompany/company';
 import Footer from '../footer/footer';
 import { useState } from 'react';
-import loginContext from '../context/context';
+// import loginContext from '../context/context';
 
 import Login from '../login/login';
 
@@ -20,13 +20,13 @@ export default function Layout() {
         setLoginShow(false);
     }
     return (<>
-        <loginContext.Provider value={loginShow}>
+        {/* <loginContext.Provider value={loginShow}> */}
             {loginShow && <Login hideLogin={hideLogin} />}
             <Header showLogin={showLogin} />
             <Adv />
             <Courses />
             <Company />
             <Footer />
-        </loginContext.Provider>
+        {/* </loginContext.Provider> */}
     </>)
 }

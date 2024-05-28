@@ -1,5 +1,5 @@
 .adv {
-    height:38em;
+    height:35em;
     position: relative;
     padding-top: 5em;
     background-color:whitesmoke;
@@ -57,44 +57,34 @@
 
 }
 
-@media (max-width:331px) {
+@media (max-width:576px) {
     .adv {
         width: 100%;
-        height: 75vh;
+        height: 90vh;
         padding-top: 2em;
     }
 
     .underline {
         width: 50%;
     }
-
-    .adv>h1 {
-        width: 100%;
-        font-size: large;
-    }
-
-    .adv>h2 {
-        margin-top: 1em;
+   
+    .adv>h3 {
+        margin-block: 1em;
     }
 
     .adv_crsl {
-        width: 310px;
-        margin-left: 3em;
-        padding-left: 0;
+        width: 90vw;
+        height: 15em;
+        margin:auto;     
     }
-
-    .adv_crsl>div {
-        margin-left: 0;
-        width: 100%;
-    }
-
+   
     .adv_crsl>div>a>image {
-
-        width: 100%;
+        width: 50%;
+        height: 50%;
     }
 }
 
-@media(max-width:768px) {
+@media (min-width:577px) and (max-width:768px){
     .adv {
         width: 100vw;
         padding-top: 2em;
@@ -120,10 +110,9 @@
     }
 
     .adv_crsl {
-        width: 90vw;
+        width: 75vw;
         margin: auto;
         gap: 8px;
-        padding-left: .9em;
     }
 
     .adv_crsl>div>a>img {
@@ -137,6 +126,7 @@
     padding-top: 2em;
     position: relative;
     height: 40em;
+    border-radius: 0%;
 }
 
 .btndiv>button {
@@ -164,6 +154,7 @@
 
 .intern_details {
     border-radius: 20px;
+    position: relative;
     width: 77vw;
     margin: auto;
     height: 20em;
@@ -182,29 +173,31 @@
     color: rgb(63, 61, 61);
 }
 
-@media (max-width:331px) {
+@media (max-width:576px) {
     .internships {
         width: 100%;
     }
-
     .internships>h1 {
         font-size: large;
     }
-
     .btndiv {
         display: flex;
         flex-direction: column;
+        /* background-color: aqua; */
         white-space: nowrap;
         flex-wrap: wrap;
         overflow-x: scroll;
     }
-
     .intern_cat {
         font-size: medium;
         display: flex;
-        right: 110px;
+        left: -3em;
+        margin: auto 0;
         width: 50vw;
         height: 20px;
+    }
+    .intern_details{
+        width: 96vw;
     }
 }
 

@@ -9,8 +9,8 @@ export default function Card({prop}) {
                     <span>{prop.status}</span>
                 </header>
                 <div className={classes.title}>
-                    <h6>{prop.Role}</h6>
-                    <h6>{prop.company}</h6>
+                    <h2>{prop.Role}</h2>
+                    <h3>{prop.company}</h3>
                 </div>
                 <ul>
                     <li><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>{prop.location}</li>
