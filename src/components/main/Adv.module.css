@@ -1,11 +1,12 @@
 .adv {
-    height:35em;
+    height: 35em;
     position: relative;
     padding-top: 5em;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     color: #333333;
     border-radius: 0%;
 }
+
 .underline {
     width: 25%;
     margin: auto;
@@ -27,16 +28,18 @@
     height: 15em;
     margin-bottom: 2em;
 }
-.advCrsl_btn{
+
+.advCrsl_btn {
     /* background-color: brown; */
-    width:10%;
+    width: 10%;
     margin: auto;
     gap: 15px;
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
-.advCrsl_btn>button{
-    background-color:silver;
+
+.advCrsl_btn>button {
+    background-color: silver;
     color: black;
 }
 
@@ -57,17 +60,18 @@
 
 }
 
-@media (max-width:412px) {
+@media (max-width:576px) {
     .adv {
         width: 100%;
-        height: 65vh;
+        /* display: flex; */
+        height: 35em;
         padding-top: 2em;
     }
 
     .underline {
         width: 50%;
     }
-   
+
     .adv>h3 {
         margin-block: 1em;
     }
@@ -75,16 +79,20 @@
     .adv_crsl {
         width: 90vw;
         height: 15em;
-        margin:auto;     
+        margin: auto;
     }
-   
+
     .adv_crsl>div>a>image {
         width: 50%;
         height: 50%;
     }
+
+    .advCrsl_btn {
+        margin-top: 2em;
+    }
 }
 
-@media (min-width:577px) and (max-width:768px){
+@media (min-width:577px) and (max-width:768px) {
     .adv {
         width: 100vw;
         padding-top: 2em;
@@ -164,7 +172,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-    margin-bottom:2em;
+    margin-bottom: 2em;
 }
 
 .internships>h1 {
@@ -177,9 +185,11 @@
     .internships {
         width: 100%;
     }
+
     .internships>h1 {
         font-size: large;
     }
+
     .btndiv {
         display: flex;
         flex-direction: column;
@@ -188,6 +198,7 @@
         flex-wrap: wrap;
         overflow-x: scroll;
     }
+
     .intern_cat {
         font-size: medium;
         display: flex;
@@ -196,18 +207,21 @@
         width: 50vw;
         height: 20px;
     }
-    .intern_details{
+
+    .intern_details {
         width: 96vw;
     }
 }
 
-@media (max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     .internships>h1 {
         font-size: 2em;
     }
-    .internships{
+
+    .internships {
         height: 45em;
     }
+
     .intern_cat {
         width: 70vw;
         height: 8em;
@@ -232,7 +246,7 @@
     }
 }
 
-@media (max-width:1200px) {
+@media (min-width:769px) and (max-width:1200px) {
     .btndiv {
         display: flex;
         align-items: center;

@@ -176,7 +176,7 @@ ul {
 
 }
 
-@media (max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     .header {
         justify-content: start;
         gap: 0;

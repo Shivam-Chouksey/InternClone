@@ -143,7 +143,7 @@ h5 {
 }
 
 
-@media (max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     footer {
         height: 40em;
     }

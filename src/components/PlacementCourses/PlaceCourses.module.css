@@ -69,7 +69,7 @@
 
 }
 
-@media(max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     .adv {
         width: 100vw;
         padding-top: 2em;
