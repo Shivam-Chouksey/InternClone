@@ -84,7 +84,6 @@ h5 {
 }
 
 .lowerDiv {
-
     height: 35%;
     width: 90%;
 }
@@ -117,8 +116,7 @@ h5 {
 }
 
 .lower2ndDiv {
-
-    height: 40%;
+    height: 35%;
     display: flex;
     justify-content: space-between;
     align-items: center;

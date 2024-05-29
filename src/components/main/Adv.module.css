@@ -1,10 +1,14 @@
 .adv {
-    height: 35em;
+    min-height: 35em;
     position: relative;
     padding-top: 5em;
     background-color: whitesmoke;
+    /* background-color: aqua; */
     color: #333333;
     border-radius: 0%;
+}
+.adv>h1{
+    font-size: 2em;
 }
 
 .underline {
@@ -18,6 +22,7 @@
 
 .adv_crsl {
     display: flex;
+    position: relative;
     margin: auto;
     width: 69.8%;
     gap: 10px;
@@ -62,7 +67,7 @@
 
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
     .adv {
         width: 100%;
         /* display: flex; */
@@ -79,7 +84,7 @@
     }
 
     .adv_crsl {
-        width: 86.5vw;
+        width: 95vw;
         display: flex;
         height: 15em;
         margin: auto;
@@ -87,18 +92,19 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         white-space: nowrap;
+        gap: 1em;
     }
       .adv_crsl>div{
         width:15em;
-        height: 95%;
+        height: 96%;
     }  
     /* .adv_crsl>div>a{
         width:30em;
         height: 100%;
     } */
     .adv_crsl>div>a>img{
-        width:15em;
-        height: 90%;
+        width:12em;
+        height: 80%;
     }
     .advCrsl_btn {
         margin-top: 2em;
@@ -143,9 +149,9 @@
 }
 
 .internships {
+    position: relative;
     background-color: white;
     padding-top: 2em;
-    position: relative;
     height: 40em;
     border-radius: 0%;
 
@@ -195,7 +201,7 @@
     color: rgb(63, 61, 61);
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
     .internships {
         width: 100%;
         /* background-color: aqua; */
