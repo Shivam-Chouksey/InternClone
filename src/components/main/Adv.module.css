@@ -10,6 +10,7 @@
 .underline {
     width: 25%;
     margin: auto;
+    margin-top: 1em;
     height: 10px;
     border-radius: 20px;
     background-color: aqua;
@@ -17,9 +18,10 @@
 
 .adv_crsl {
     display: flex;
-    width: 80%;
+    margin: auto;
+    width: 69.8%;
     gap: 10px;
-    margin-left: 9em;
+    /* margin-left: 9em; */
     overflow-x: scroll;
     margin-top: 1em;
     border-radius: 20px;
@@ -77,16 +79,27 @@
     }
 
     .adv_crsl {
-        width: 90vw;
+        width: 86.5vw;
+        display: flex;
         height: 15em;
         margin: auto;
+        /* background-color: aqua; */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        white-space: nowrap;
     }
-
-    .adv_crsl>div>a>image {
-        width: 50%;
-        height: 50%;
+      .adv_crsl>div{
+        width:15em;
+        height: 95%;
+    }  
+    /* .adv_crsl>div>a{
+        width:30em;
+        height: 100%;
+    } */
+    .adv_crsl>div>a>img{
+        width:15em;
+        height: 90%;
     }
-
     .advCrsl_btn {
         margin-top: 2em;
     }
@@ -162,18 +175,18 @@
 }
 
 .intern_details {
+    display:flex;
     border-radius: 20px;
-    position: relative;
-    width: 77vw;
+     width: 53.5%;
     margin: auto;
     height: 20em;
-    display: flex;
     overflow-y: hidden;
-    gap: 20px;
+    gap: 1em;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
     white-space: nowrap;
-    margin-bottom: 2em;
+    margin-bottom: 2em;  
 }
 
 .internships>h1 {
@@ -217,8 +230,13 @@
     }
 
     .intern_details {
-        width: 96vw;
-        margin-bottom:-2em
+        width: 95.5vw;
+        display: flex;
+        /* gap: 3em; */
+        flex-shrink: 1;
+        margin-bottom:-2em;
+        /* background-color: aqua; */
+        
     }
     
 }
@@ -243,10 +261,12 @@
         white-space: nowrap;
         justify-content: center;
     }
+    .intern_details{
+        width: 71%;
+    }
 
     .btndiv {
         height: 10vh;
-
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;

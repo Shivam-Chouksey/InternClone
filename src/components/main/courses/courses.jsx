@@ -6,10 +6,10 @@ export default function Courses() {
   const {course}=data;
   const crsRef=useRef()
      const crsRight=()=>{
-        crsRef.current.scrollLeft=crsRef.current.scrollLeft+crsRef.current.clientWidth/4
+        crsRef.current.scrollLeft=crsRef.current.scrollLeft+crsRef.current.clientWidth
      }
      const crsLeft=()=>{
-        crsRef.current.scrollLeft=crsRef.current.scrollLeft-crsRef.current.clientWidth/4
+        crsRef.current.scrollLeft=crsRef.current.scrollLeft-crsRef.current.clientWidth
      }
 
 

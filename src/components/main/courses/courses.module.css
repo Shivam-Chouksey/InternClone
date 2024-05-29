@@ -11,7 +11,8 @@
 .courseCarasoul {
     border-radius: 20px;
     background-color: aliceblue;
-    width: 81vw;
+    /* background-color: aqua; */
+    width: 82.5vw;
     margin: auto;
     height: 20em;
     display: flex;
@@ -91,6 +92,11 @@
 
 @media (max-width:576px) {
     .courseCarasoul{
-        width: 95vw;
+        width: 97vw;
+        /* background-color: aqua; */
+    }
+    .courses_crsl{
+        width: 260px;
+        /* background-color: aqua; */
     }
 }
