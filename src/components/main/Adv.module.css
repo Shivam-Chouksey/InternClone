@@ -7,7 +7,8 @@
     color: #333333;
     border-radius: 0%;
 }
-.adv>h1{
+
+.adv>h1 {
     font-size: 2em;
 }
 
@@ -94,18 +95,24 @@
         white-space: nowrap;
         gap: 1em;
     }
-      .adv_crsl>div{
-        width:15em;
+
+    .adv_crsl>div {
+        width: 15em;
+        flex-shrink: 1;
         height: 96%;
-    }  
+    }
+
     /* .adv_crsl>div>a{
         width:30em;
         height: 100%;
     } */
-    .adv_crsl>div>a>img{
-        width:12em;
+    .adv_crsl>div>a>img {
+        width: 12em;
         height: 80%;
+        flex-shrink: 1;
+
     }
+
     .advCrsl_btn {
         margin-top: 2em;
     }
@@ -181,9 +188,9 @@
 }
 
 .intern_details {
-    display:flex;
+    display: flex;
     border-radius: 20px;
-     width: 53.5%;
+    width: 53.5%;
     margin: auto;
     height: 20em;
     overflow-y: hidden;
@@ -192,7 +199,7 @@
     scroll-snap-type: x mandatory;
     scroll-snap-align: start;
     white-space: nowrap;
-    margin-bottom: 2em;  
+    margin-bottom: 2em;
 }
 
 .internships>h1 {
@@ -240,11 +247,11 @@
         display: flex;
         /* gap: 3em; */
         flex-shrink: 1;
-        margin-bottom:-2em;
+        margin-bottom: -2em;
         /* background-color: aqua; */
-        
+
     }
-    
+
 }
 
 @media (min-width:577px) and (max-width:768px) {
@@ -267,7 +274,8 @@
         white-space: nowrap;
         justify-content: center;
     }
-    .intern_details{
+
+    .intern_details {
         width: 71%;
     }
 
