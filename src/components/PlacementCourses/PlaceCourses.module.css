@@ -111,26 +111,33 @@
 @media (max-width:576px) {
     .adv {
         width: 100%;
-        height: 52em;
+        height: 56em;
         padding-top: 2em;
+        
+    }
+    .adv>h1{
+        /* margin-bottom:1em; */
+        /* background-color: #00489A; */
+        height: 3em;
     }
 
     .namaste {
-        height: 21em;
+        height: 25em;
         margin-top: 0;
-        margin-bottom: 0;
+        /* margin-bottom: 2em; */
     }
 
     .content {
-        height: 100%;
+        height: 92%;
         width: 90%;
         display: flex;
         align-items: start;
         gap: 2em;
+        /* margin-bottom: 3em; */
     }
 
     .adv_crsl {
-        height: 32%;
+        height: 29%;
     }
 
     /* .content div {

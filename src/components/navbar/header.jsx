@@ -31,7 +31,7 @@ function Header() {
     const dispatch = useDispatch();
     const showloginPage = useSelector(state => state.loginPageState.loginPage)
     const showlogPage = () => {
-        dispatch(loginActions.toogleshowPage())
+        dispatch(loginActions.toogleshowPage()) 
     }
     const [Daata, setDaata] = useState(internData[0])
     const hoveringOnProfile = () => {
@@ -54,8 +54,15 @@ function Header() {
     }
 
     const [sideBar, setSideBar] = useState(false);
-    const toggle = () => {
-        setSideBar((i) => !i);
+    const showSideBar = () => {
+        setSideBar(true);
+    }
+    const closeSideBar=()=>{
+        setSideBar(false)
+    }
+    const show_hide=()=>{
+     setSideBar(false)
+     dispatch(loginActions.toogleshowPage()) 
     }
 
     return (
@@ -71,13 +78,13 @@ function Header() {
                         <li><a href="">Contact Us</a></li><hr />
                         <li><a href="">Register-As a Student</a></li>
                         <li><a href="">Register-As a Employer</a></li>
-                        <li><a href="">Login</a></li>
-                        <button onClick={toggle}>Close</button>
+                        <li><a   onClick={show_hide}>Login</a></li>
+                        <li><a  onClick={closeSideBar}>Close</a></li>
                     </ul>
                 </div>
             </Modal>}    
             <nav className={classes.header}>
-                <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="40" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <svg onClick={showSideBar} xmlns="http://www.w3.org/2000/svg" width="40" height="18" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
                 <div className={classes.left_div}>
@@ -101,12 +108,8 @@ function Header() {
                                     </ul>
                                 </div ></a>
                             </motion.li>
-                            <li><a href="">Jobs <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></a></li>
-                            <li><Link to='/Placement Courses' >Courses <span>80%OFF</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></Link></li>
+                            <li><a href="">Jobs </a></li>
+                            <li><Link to='/Placement Courses' >Courses <span>80%OFF</span></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -115,20 +118,11 @@ function Header() {
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg>Search</a>
                     <div className={classes.loginbtn} ><button onClick={showlogPage} >Login</button></div>
-                    <button>Register</button>
+                    <button className={classes.registerbtn}>Register</button>
                     <div className={classes.talent}><a href="">Hire talent</a></div>
                 </div>
             </nav>
-            {/* {a ? <div className={classes.dialog}>
-                <ul className={classes.dialogul1}>
-                    <li><a href="">Top Locations</a></li>
-                    <li onMouseOver={hoveringOnProfile} onMouseLeave={MouseLeave}><a href="" >Profile</a></li>
-                    <li onMouseOver={hoveringOnCourses} onMouseLeave={MouseLeave}><a href="">Placement Gauranteed Courses</a></li>
-                </ul>
-                <ul className={classes.dialogul2}>
-                    {Daata.map((i) => <li key={i.id}>{i}</li>)}
-                </ul>
-            </div > : ''} */}
+           
 
         </>
 

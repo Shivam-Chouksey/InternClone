@@ -29,16 +29,20 @@
     display: flex;
     height: 90%;
     width: 45%;
+    /* background-color: #00A5EC; */
+    padding-bottom: .5em;
 }
 
 .right_div {
     height: 100%;
+    /* background-color: #00A5EC; */
     margin-left: 15%;
     width: 30%;
     gap: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: .5em;
 
 
 }
@@ -112,7 +116,7 @@ ul {
 
 .talent {
     /* background-color: #00A5EC; */
-    padding-top: .6em;
+    padding-top: 1.5em;
 
 }
 
@@ -132,10 +136,14 @@ ul {
     background-color: white;
     color: #00A5EC;
     border-color: #00A5EC;
+    margin-top: .3em;
 }
 
 .loginbtn {
     margin-top: 2px;
+}
+.registerbtn{
+    margin-top: .3em;
 }
 
 
@@ -304,9 +312,10 @@ ul {
     border-radius: 5px;
     width: 6em;
 }
-
+.sidebarUl>button{
+    
+}
 .Nodialog {
-
     display: none;
 }
 

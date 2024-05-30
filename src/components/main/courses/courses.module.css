@@ -91,12 +91,20 @@
 }
 
 @media (max-width:576px) {
+    .courses{
+        height: 30em;
+    }
     .courseCarasoul{
+        margin-top: 3em;
         width: 97vw;
         /* background-color: aqua; */
+        /* height: 15em; */
     }
     .courses_crsl{
         width: 260px;
         /* background-color: aqua; */
+    }
+    .advCrsl_btn{
+        display: none;
     }
 }

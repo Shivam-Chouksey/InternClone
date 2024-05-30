@@ -18,6 +18,7 @@ export default function Login() {
     }
     return (
         <dialog open>
+            <div className={classes.ParentDialog}>
             <button className={classes.cancelbtn} onClick={hideLogPage}>X</button>
             < form action="" className={classes.dialog} >
 
@@ -45,6 +46,7 @@ export default function Login() {
                     <button type='Submit' onClick={clickSignUp}>Sign-up</button>
                 </div>
             </form >
+            </div>
         </dialog >
 
     )
