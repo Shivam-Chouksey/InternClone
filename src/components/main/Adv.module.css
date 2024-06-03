@@ -357,7 +357,7 @@
         height: 90%;
         display: flex;
         justify-content: start;
-        gap: .2em;
+        gap: 1em;
         flex-wrap: wrap;
         color: black;
     }
