@@ -287,9 +287,12 @@ ul {
     }
 
     .logo_div {
-        width: 100em;
-        margin-left: 0;
-    }
+        width: 8em;
+        height: 100%;
+        display: flex; 
+        margin-top: .3em;
+        margin-left: 0;   
+    }   
     .left_li{
         display: none;
     }
