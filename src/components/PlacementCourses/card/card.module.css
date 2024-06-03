@@ -101,5 +101,77 @@
     height: 4em;
     align-items: center;
     border-radius: 0px 0px 10px 10px;
+}
+
+@media (min-width:310px) and (max-width:576px) {
+    .Card {
+        width: 15em;
+        height: 20em;
+    }
+
+    .Div1 {
+        justify-content: start;
+        height: 2em;
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #00A5EC; */
+    }
+
+    .Div1>h5 {
+        font-size: 1em;
+        /* background-color: #00A5EC; */
+        width: 90%;
+
+    }
+
+    .Div1>span {
+        width: 90%;
+        font-size: .7em;
+    }
+
+    .Div2 {
+        padding-top: 0;
+        height: 6em;
+        margin-top: 1em;
+    }
+
+    .Div2>ul {
+        margin-left: .2em;
+        font-size: .8em;
+        padding-top: 0%;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1500px) {
+    .Card {
+        /* background-color: #00A5EC; */
+        width: 230px;
+        height: 350px;
+    }
+
+    .Div1>h5 {
+        font-size: 1em;
+    }
+
+    .Div1>span {
+        font-size: .7em;
+    }
+
+    .Div2 {
+        height: 8em;
+        /* background-color: aquamarine; */
+        font-size: .8em;
+    }
+
+    .Div2>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 0%;
+       margin-left: .3em;
+    }
+
 
 }

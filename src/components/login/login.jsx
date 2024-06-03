@@ -22,7 +22,7 @@ export default function Login() {
             <button className={classes.cancelbtn} onClick={hideLogPage}>X</button>
             < form action="" className={classes.dialog} >
 
-                <a href=""><img src={google_icon} alt="" />Sign up / Log in with Google</a>
+                <a href=""><img src={google_icon} alt="" /><span className={classes.firstSpan}><span>Sign Up / </span>Log in with Google</span></a>
                 <span>-OR-</span>
                 <label htmlFor="email">Email:</label>
                 <input type="email" id='email' placeholder='john@example.com' required />
@@ -43,7 +43,7 @@ export default function Login() {
                 {Signupclicked ? '' : <a href="">Forgot password ?</a>}
                 <div>
                     <button type='Submit' onClick={clickLogin}>Login</button>
-                    <button type='Submit' onClick={clickSignUp}>Sign-up</button>
+                    <button type='Submit' onClick={clickSignUp} className={classes.signUp}>Sign-up</button>
                 </div>
             </form >
             </div>

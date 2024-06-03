@@ -31,10 +31,10 @@ export default function PlacementCourses() {
       </div>
     </div>
     <div className={classes1.GauranteeDiv} style={{backgroundImage:`url(${background})`}}>
-      <div className={classes1.content}>
+     
         <div className={classes1.Div1}>
-          <span>PLACEMENT GAURANTEE COURSES</span>
-          <span>4-12 months</span>
+          <span>PLACEMENT GAURANTEE COURSES </span>
+          
         </div>
         <div className={classes1.Div2}>
           <h2>Guaranteed way to start your career</h2>
@@ -47,7 +47,7 @@ export default function PlacementCourses() {
         <div className={classes1.Div4}>
           {courseData.map((i) => <Card key={i.id} data={i} />)}
         </div>
-      </div>
+     
     </div>
     <Footer />
 

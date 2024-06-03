@@ -10,7 +10,7 @@ footer {
     border-radius: 0;
     width: 80%;
     margin: auto;
-    height: 40em;
+    height: 45em;
 
 }
 
@@ -210,12 +210,14 @@ h5 {
     }
 }
 
-@media (max-width:576px) {
+@media (min-width:310px) and (max-width:576px) {
     footer {
         height: 73em;
+       
     }
     .footer {
         height: 60em;
+        margin-left: .5em;
     }
 
     .upperDiv {
@@ -234,7 +236,7 @@ h5 {
         /* gap: 2em; */
     }
     .upDivs h5{
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .lowerDiv {
@@ -260,11 +262,61 @@ h5 {
         flex-wrap: wrap;
         justify-content: space-around;
         height: 8em;
+        color: white;
     }
 
     .socials button {
         height: 3em;
         width: 30em;
+        color: white;
     }
 
 }
+
+@media (min-width:769px) and (max-width:1200px) {
+    .footer{
+        /* background-color: aqua; */
+        width:95%;
+        height:100%;
+    }
+    .lower1stDiv{
+        height: 8em;
+    } 
+    .upperDiv{
+        /* background-color: brown; */
+        gap: .5em;
+    }   
+    .upDivs{
+        /* background-color: purple; */
+        text-align: start;
+    } 
+    .upDivs>h5{
+        height: 3em;
+        font-size:1.1em ;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1500px) {
+    .footer{
+        /* background-color: aqua; */
+        width:95%;
+        height:100%;
+    }
+    .lower1stDiv{
+        height: 8em;
+    } 
+    .upperDiv{
+        /* background-color: brown; */
+        gap: .5em;
+    }   
+    .upDivs{
+        /* background-color: purple; */
+        text-align: start;
+    } 
+    .upDivs>h5{
+        height: 3em;
+        font-size:1.1em ;
+    }
+}
+
+

@@ -16,8 +16,8 @@ export default function Courses() {
 
   return (<>
     <div className={classes.courses}>
-      <h2>Certification courses </h2>
-      <h3>Fastest way to build your CV</h3>
+      <h1>Certification courses </h1>
+      <h2>Fastest way to build your CV</h2>
       <div className={classes.courseCarasoul} ref={crsRef}>
       {course.map((i)=><CardCourse key={i.id} prop={i}/>)}
       </div>

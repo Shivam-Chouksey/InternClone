@@ -1,14 +1,17 @@
 .companies {
     padding-top: 3em;
-    background-color: white;
+    width: 100%;
+    background-color:white;
     height: 17em;
     white-space: nowrap;
     border-radius: 0;
     color: #333;
+   
 }
 
-.companies>h3 {
-    margin-bottom: 2em;
+.companies>h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
 }
 
 .comp_crsl {
@@ -39,21 +42,25 @@
     }
 }
 
-.comp_crsl::before {
-    background: linear-gradient(to right, rgba(255, 255,255, 0), white);
-}
 
-.comp_crsl::after {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
 
-@media (max-width:576px) {
+
+@media (min-width:310px) and (max-width:576px) {
     .companies{
-        height: 15em;
+        display: flex;
+        height: 12em;
+        width: 100%;
+        text-align: start;
+        flex-direction: column;
+        align-items: start;
+        padding: 0%;
+    }
+    .companies>h2{
+        font-size:1.5em;  
+        margin-left: .6em;
     }
     .comp_crsl{
-        width: 100%;
+        border-radius: 0%;
     }
-    
 }
 

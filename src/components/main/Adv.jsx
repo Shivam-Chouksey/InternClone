@@ -43,8 +43,7 @@ export default function Adv() {
             <h1>Make your dream career a reality</h1>
             <div className={classes.underline}></div>
             <h2>Trending on Internshala</h2>
-            <div className={classes.adv_crslParent}>
-                    <div className={classes.advBtn1}><button onClick={LeftScroll} >&#60;</button></div>
+                           
                 <div className={classes.adv_crsl} ref={advCrsl}>
                     <div ><a href=""><img src={fst} alt="" /></a></div>
                     <div ><a href=""><img src={scd} alt="" /></a></div>
@@ -52,9 +51,8 @@ export default function Adv() {
                     <div ><a href=""><img src={frt} alt="" /></a></div>
                     <div ><a href=""><img src={fft} alt="" /></a></div>
                     <div><a href=""><img src={sxt} alt="" /></a></div>
-                </div>
-                    <div className={classes.advBtn2}><button onClick={rightScroll} >&#62;</button></div>
-            </div>
+                </div>                 
+           
             <div className={classes.advCrsl_btn} >
                 <button onClick={LeftScroll}>&#60;</button>
                 <button onClick={rightScroll}>&#62;</button>

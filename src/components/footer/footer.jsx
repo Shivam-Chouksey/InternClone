@@ -1,8 +1,10 @@
+
 import classes from './footer.module.css'
 
 export default function Footer() {
+    
     return (
-        <footer >
+        <footer>
             <div className={classes.footer}>
                 <div className={classes.upperDiv}>
                     <div className={classes.upDivs}>

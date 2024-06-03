@@ -55,6 +55,11 @@ header {
     width: 80%;
     text-wrap: wrap;
     text-align: start;
+    color: black;
+}
+.line{
+    border:solid #333333 .1px;
+    width: 90%;
 }
 
 
@@ -88,13 +93,19 @@ header {
     background-color: whitesmoke;
 }
 
-.card footer a{
-    color: #333;
-}
 
-@media (max-width:576px) {
+
+@media (min-width:310px) and (max-width:576px) {
     .card{
-        /* width: 285px; */
+        width: 240px;
+        margin-left: 1em;
     }
+
 }
 
+@media (min-width:769px) and (max-width:1200px) {
+    .card{
+        width: 255px;
+    }
+
+}

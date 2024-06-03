@@ -142,46 +142,68 @@ ul {
 .loginbtn {
     margin-top: 2px;
 }
-.registerbtn{
+
+.registerbtn {
     margin-top: .3em;
+}
+.header>svg{
+    display: none;
 }
 
 
-@media(max-width:1200px) {
+@media (min-width:769px) and (max-width:1200px) {
     .header {
-        padding-left: 0;
-        justify-content: start;
-        height: 12vh;
-    }
-
-    .right_div {
-        width: 50%;
-    }
-
-    .left_div li a {
-        display: none;
+        width: 100%;
+        padding: 0%;
+        display: flex;
+        justify-content:space-between;
     }
 
     .header>svg {
-        display: block;
-        margin-left: 0;
+        display: none;
     }
 
-    .loginbtn {
-        display: block;
-
+    .left_div {
+        /* background-color: #00A5EC; */
+        padding-top: .9em;
+        width: 30em;
+        display: flex;
+        justify-content:start;
+        align-items: center;
     }
 
     .logo_div {
-        margin-left: 0;
-    }
-}
-
-@media (min-width:1201px) {
-    .header>svg {
-        display: none;
+        margin: 0;
     }
 
+    .right_div {
+        padding: 0%;
+        width: 25em;
+        /* background-color: aquamarine; */
+        margin:0 0 0 3em;
+    }
+    .loginbtn{
+        margin-top: 8px;
+    }
+
+    .loginbtn>button {
+        padding: 0%;
+        margin:0;
+        width: 5em;
+        height: 2em;
+    }
+
+    .registerbtn {
+        margin: 0;
+        padding: 4px 8px;
+    }
+
+    .right_div>a {
+        display: flex;
+    }
+    .right_div>a>svg{
+        margin-top: 5px;
+    }
 }
 
 @media (min-width:577px) and (max-width:768px) {
@@ -217,8 +239,6 @@ ul {
 
     }
 
-
-
     .right_div>button {
         height: 6vh;
         text-align: center;
@@ -228,7 +248,7 @@ ul {
     }
 }
 
-@media (max-width:576px) {
+@media (min-width:310px) and (max-width:576px) {
     .header {
         width: 100%;
         justify-content: start;
@@ -237,6 +257,7 @@ ul {
     }
 
     .header>svg {
+        display: block;
         margin-left: .5em;
     }
 
@@ -269,7 +290,209 @@ ul {
         width: 100em;
         margin-left: 0;
     }
+    .left_li{
+        display: none;
+    }
 }
+
+@media (min-width:1201px) and (max-width:1500px) {
+  
+    .header {
+        /* background-color:purple; */
+        padding: 0;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        box-shadow: 1px 1px 2px 1px;
+    
+    }
+    
+    .talent a {
+        color: #333;
+    }
+    
+    .header>svg {
+        color: black;
+        margin-left: 2em;
+        display: block;
+    }
+    
+    .left_div {
+        display: flex;
+        height: 90%;
+        width: 45%;
+        /* background-color: #00A5EC; */
+        padding-bottom: .5em;
+    }
+    
+    .right_div {
+        height: 100%;
+        /* background-color: #00A5EC; */
+        margin-left: 15%;
+        width: 40%;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: .5em;
+    }
+.right_div>a{
+    display: flex;
+    margin-top: .5em;
+    /* background-color: #00A5EC; */
+    width: 10em;
+}
+.right_div>a>svg{
+    margin-top: .3em;
+}
+    .logo_div>a>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    
+    }
+  
+    .logo_div {
+        width: 40%;
+        height: 120%;
+        margin-left:0 ;
+        /* background-color: #00A5EC; */
+        margin-bottom: 15px;  
+    }
+    
+    .left_li,
+    ul {
+        width: 100%;
+        padding-top: 8px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background-color: #00A5EC; */
+        height: 4em;
+    }
+    
+    .left_li>ul>li {
+        margin-top: 1em;
+        list-style: none;
+        /* background-color: aqua; */
+        height: 100%;
+    }
+    
+    .left_li>ul>li>a {
+        color: rgb(67, 66, 66);
+        font-weight: 400;
+    }
+    
+    .left_li span {
+        background-color: orange;
+        border-radius: 5px;
+    
+        color: aliceblue;
+    }
+    
+    .left_div svg {
+        color: rgb(67, 66, 66);
+        height: .8em;
+    }
+    
+    .right_div svg {
+        color: black;
+        margin-right: 1em;
+        flex: 0 1 auto;
+    }
+    
+    
+    .right_div button {
+        background: white;
+        color: white;
+        border-color: #00A5EC;
+        width: 7em;
+        flex: 0 1 auto;
+    }
+    
+    .talent {
+        /* background-color: #00A5EC; */
+        padding-top: 1.5em;
+    
+    }
+    
+    .right_div>a:first-of-type {
+        color: rgb(67, 66, 66);
+        font-weight: 400;
+        /* display: flex; */
+        /* padding-top: 2px; */
+        /* background-color: burlywood; */
+    }
+    
+    .right_div button {
+        background-color: #00A5EC;
+    }
+    
+    .right_div .loginbtn>button {
+        background-color: white;
+        color: #00A5EC;
+        border-color: #00A5EC;
+        margin-top: .3em;
+    }
+    
+    .loginbtn {
+        margin-top: 2px;
+    }
+    
+    .registerbtn {
+        margin-top: .3em;
+    }
+    .header>svg{
+        display: none;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------sidebar */
 .sidebar {
@@ -312,22 +535,22 @@ ul {
     border-radius: 5px;
     width: 6em;
 }
-.sidebarUl>button{
-    
-}
+
+.sidebarUl>button {}
+
 .Nodialog {
     display: none;
 }
 
 .dialog {
     width: 33em;
-    display: none;
+    display:none;
     padding-left: 1em;
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 1;
     height: 25em;
-    background-color: whitesmoke;
+    background-color: white;
     position: absolute;
     top: 10vh;
     border-radius: 0;
@@ -397,6 +620,14 @@ ul {
     width: 50%;
     height: 90%;
     left: 13em;
-    padding-left:1em;
+    padding-left: 1em;
     /* background-color: chartreuse; */
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .dialog{
+        left:0;
+        background-color: white;
+        margin-left: 7em;        
+    }
 }
