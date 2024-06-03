@@ -33,7 +33,7 @@
     border-radius: 20px;
     justify-content: start;
     /* background-color: aqua; */
-    height:15em;
+    height: 15em;
     margin-bottom: 2em;
 }
 
@@ -130,12 +130,12 @@
     .adv_crsl {
         display: flex;
         flex-direction: column;
-        width:100%;
+        width: 100%;
         border-radius: 0;
         flex-wrap: wrap;
         height: 13em;
         margin: auto;
-        gap:-1em;
+        gap: -1em;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         white-space: nowrap;
@@ -156,6 +156,7 @@
         flex-shrink: 1;
     }
 }
+
 @media (min-width:577px) and (max-width:768px) {
     .adv {
         width: 100vw;
@@ -200,26 +201,30 @@
 }
 
 @media (min-width:769px) and (max-width:1200px) {
-    .adv{
+    .adv {
         width: 100%;
-        padding-top:3em;
+        padding-top: 3em;
         height: 30em;
         /* background-color: #00a5ec; */
     }
-    .underline{
+
+    .underline {
         /* display: block; */
         width: 22em;
         height: .5em;
     }
-    .adv_crsl{
+
+    .adv_crsl {
         /* background-color: brown; */
-        width:46.7em;
+        width: 46.7em;
         height: 11em;
     }
-    .adv_crsl>div{
+
+    .adv_crsl>div {
         width: 15em;
     }
-    .adv_crsl>div>a>img{
+
+    .adv_crsl>div>a>img {
         width: 15em;
     }
 }
@@ -353,10 +358,11 @@
 
     .btndiv {
         font-size: .7em;
+        width: 95%;
         /* background-color:brown; */
         height: 90%;
         display: flex;
-        justify-content: start;
+        justify-content:center;
         gap: 1em;
         flex-wrap: wrap;
         color: black;
@@ -375,31 +381,34 @@
     }
 }
 
-@media (min-width:769px)and (max-width:1200px){
-  
-     .intern_cat{
+@media (min-width:769px)and (max-width:1200px) {
+
+    .intern_cat {
         /* background-color: #00a5ec; */
         display: flex;
         width: 35em;
         flex-direction: column;
         height: 6em;
-     }
-     .btndiv{
+    }
+
+    .btndiv {
         /* background-color: brown; */
         display: flex;
         overflow-x: scroll;
         white-space: nowrap;
         scroll-snap-type: x mandatory;
-     }
-    .btndiv>button{
-        height:3em
     }
-     .intern_details{
+
+    .btndiv>button {
+        height: 3em
+    }
+
+    .intern_details {
         /* background-color: #00a5ec; */
         /* width: 34.5em; */
         width: 50.8em;
-    
-     }
+
+    }
 
 }
 
@@ -411,9 +420,9 @@
         padding-top: 2em;
         height: 40em;
         border-radius: 0%;
-    
+
     }
-    
+
     .btndiv>button {
         background: none;
         border-radius: 20px;
@@ -422,24 +431,25 @@
         margin-left: 15px;
         font-size: small;
     }
-    .btndiv{
+
+    .btndiv {
         margin-top: .5em;
     }
-    
+
     .intern_cat {
         color: grey;
         /* background-color: #00a5ec; */
         font-weight: 400;
         gap: 1em;
-        width:73em;
+        width: 73em;
         margin: 2em auto 3em auto;
         /* margin-top: 2em; */
         /* margin-bottom: 3em; */
         display: flex;
         align-items: center;
-    
+
     }
-    
+
     .intern_details {
         display: flex;
         border-radius: 20px;
@@ -454,7 +464,7 @@
         white-space: nowrap;
         margin-bottom: 2em;
     }
-    
+
     .internships>h1 {
         font-size: 2em;
         font-weight: 650;
