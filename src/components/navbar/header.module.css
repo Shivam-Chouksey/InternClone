@@ -264,6 +264,7 @@ ul {
     .right_div {
         width: 50%;
         margin: 0;
+        /* background-color: #00A5EC; */
     }
 
     .right_div a {
@@ -275,7 +276,8 @@ ul {
     }
 
     .right_div button {
-        margin-right: 1em;
+        margin-top: .4em;
+        /* margin-right: 1em; */
         color: white;
         background-color: #00A5EC;
 
