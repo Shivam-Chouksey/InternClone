@@ -135,6 +135,9 @@ h5 {
     justify-content: space-between;
     align-items: center;
 }
+.socials>button{
+    color: white;
+}
 
 .lower2ndDiv span {
     color: white;
@@ -202,7 +205,6 @@ h5 {
 
     .socials {
         position: relative;
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
