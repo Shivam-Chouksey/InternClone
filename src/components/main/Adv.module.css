@@ -357,12 +357,12 @@
     }
 
     .btndiv {
+        margin: auto;
         font-size: .7em;
-        width: 95%;
+        width:30em;
         /* background-color:brown; */
         height: 90%;
         display: flex;
-        justify-content:center;
         gap: 1em;
         flex-wrap: wrap;
         color: black;
