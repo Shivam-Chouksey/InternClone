@@ -520,7 +520,7 @@ ul {
 
 .dialog {
     width: 33em;
-    display: flex;
+    display: none;
     padding-left: 1em;
     flex-direction: column;
     flex-wrap: wrap;
