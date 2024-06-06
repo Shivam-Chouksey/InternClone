@@ -464,48 +464,7 @@ ul {
         display: none;
     }
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -553,7 +512,7 @@ ul {
     width: 6em;
 }
 
-.sidebarUl>button {}
+
 
 .Nodialog {
     display: none;
@@ -561,7 +520,7 @@ ul {
 
 .dialog {
     width: 33em;
-    display: none;
+    display: flex;
     padding-left: 1em;
     flex-direction: column;
     flex-wrap: wrap;
@@ -647,4 +606,24 @@ ul {
         background-color: white;
         margin-left: 7em;
     }
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+    
+    .dialog {
+        width: 33em;
+        display: flex;
+        padding-left: 1em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        z-index: 1;
+        height: 25em;
+        background-color: white;
+        position: absolute;
+        top: 10vh;
+        border-radius: 0;
+        padding-top: 2.5em;
+        left: 11em
+    }
+
 }
