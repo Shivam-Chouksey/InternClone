@@ -359,7 +359,7 @@ ul {
     .right_div>a>svg {
         margin-top: .3em;
     }
-   
+
 
     .logo_div>a>img {
         width: 100%;
@@ -609,10 +609,10 @@ ul {
 }
 
 @media (min-width:1200px) and (max-width:1500px) {
-    
+
     .dialog {
         width: 33em;
-        display: flex;
+        display: none;
         padding-left: 1em;
         flex-direction: column;
         flex-wrap: wrap;
